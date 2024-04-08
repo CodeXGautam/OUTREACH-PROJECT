@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    font-family: Audiowide;  
+    color: white;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+    background: black;
+    background: linear-gradient(to right, black , rgb(10, 10, 78) , rgb(20, 20, 31))
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    align-items: center;
+    background: linear-gradient(to right, black , rgb(10, 10, 78) , rgb(20, 20, 31));
+    position:sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#img1{
+    width: 3vw;
+    height: 8vh;
+}
+#img2{
+    width: 18vw;
+    height: auto;
+}
+.navbar nav ul a {
+    text-decoration: none;
+    margin: 1vw;
+    font-size: 18px;
+    transition: all .1s ease-in-out;
+}
+
+.navbar nav ul a:hover{
+   color: #ffb400;
+}
+
+.navbar nav ul a:active{
+    text-decoration: underline;
+}
+
+#result{
+    background-color: #ffb400;
+    padding: 8px; 
+    border-radius: 5px;
+    transition: all .7s ease-in-out;
+}
+
+#result:hover{
+   color: rgb(0, 0, 0);
+}
+
+.container{
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container p{
+    font-family: Goldman;
+    width: 75vw;
+    margin: 6.5vh 7.9vw;
+    font-size: 2vw;
+    letter-spacing: 2px;
+    padding: 2vh 5vw;
+}
+
+h1{
+    text-align: center;
+    font-size: 5vw;
+    background: linear-gradient(to right,orange,#ffb400,yellow);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 10px 10px 10px rgba(182, 43, 166, 0.227);
+    animation: heading 1s alternate infinite;
+    margin: 4vw;
+    margin-bottom: 0;
+}
+
+@keyframes heading {
+    100%{
+        text-shadow: 10px 10px 10px rgba(187, 141, 42, 0.227);
+    }
+    50%{
+        text-shadow: 10px 10px 10px rgba(187, 165, 42, 0.227);
+    }
+}
+
+.rounds{
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#round-line{
+    text-align: center;
+    font-size: 2vw;
+    padding: 2rem;
+}
+
+#round-span{
+    color: #ffb400;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7rem;
+    padding: 3rem;
+}
+
+.inception{
+    width: 40vw;
+    padding: 18px;
+    border: 2px solid #121212;
+    background: linear-gradient(to right, black , rgb(10, 10, 78) , rgb(20, 20, 31));
+    background: url(inceptionbg.svg) no-repeat center center/cover;
+    border-radius: 20px;
+    transition: all .3s ease-in;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(50px);
+    /* transform: translateX(50px); */
+}
+
+
+
+.inception:hover{
+    background: linear-gradient(to right, black , rgb(10, 10, 78) , rgb(20, 20, 31));
+    transform: scale(1.025);
+}
+
+.pinnacle{
+    width: 40vw;
+    padding: 18px;
+    border: 2px solid #121212;
+    background: linear-gradient(to right, black , rgb(10, 10, 78) , rgb(20, 20, 31));
+    background: url(pinnaclebg.svg) no-repeat center center/cover;
+    border-radius: 20px;
+    transition: all .3s ease-in;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+.pinnacle:hover{
+    background: linear-gradient(to right, black , rgb(10, 10, 78) , rgb(20, 20, 31));
+    transform: scale(1.025);
+}
+.inception p{
+    letter-spacing: 2px; 
+}
+
+
+.pinnacle p{
+    letter-spacing: 2px;
+}
+
+h2{
+    color: #ffb400;
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: Goldman;
+    font-size: 1.4vw;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    padding: 3rem;
+}
+
+.categories img{
+    width: 23vw;
+    transition: all .3s ease-in;
+}
+
+.categories img:hover{
+    transform: scale(1.2);
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+}
+
+.time ul{
+    margin: 30px;
+}
+
+.time ul li{
+    width: 70vw;
+    margin: 18px;
+    padding: 32px;
+    list-style: square;
+    font-family: Goldman;
+    letter-spacing: 2.5px;
+    word-spacing: 5px;
+    font-size: 1.4vw;
+}
+
+.prize-head{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.prize-head h1{
+    margin-left: 2px;
+}
+
+.pikachu{
+    position: absolute;
+    height:18vh;
+    width: 21vw;
+    opacity: 1;
+    left: 22%;
+    top: 0;
+}
+
+.prizes:hover{
+    .pikachu{
+      opacity: 1;
+      top: 0px;
+    }
+}
+
+.prizes{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.prizes span{
+    letter-spacing: 2px;
+    font-family: Goldman;
+    margin: 10px;
+    padding: 15px;
+    font-size: 1.4vw;
+}
+.prizes img{
+    width: 42vw;
+    margin: 10px;
+}
+
+.footer{
+    display: flex;
+    gap: 6vw;
+    margin-top: 6rem;
+    padding: 40px;
+    font-size: 1.4vw;
+}
+
+.foot1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 25vw;
+}
+
+.foot2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.foot2 a:hover,.foot3 a:hover{
+    text-decoration: underline;
+}
+
+.foot2 a{
+    text-decoration: none;
+}
+
+.foot3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.foot3 a{
+    text-decoration: none;
+}
+
+#footlogo{
+width: 9vw;
+height: 15vh;
+}
+
+
+
+#foottitle{
+    width: 10vw;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social div{
+     display: flex;
+     gap: 1rem;
+    
+}
+
+.social div a :hover {
+    background-color: rgba(114, 114, 114, 0.584);
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    color:  #b3b3b3;
+}

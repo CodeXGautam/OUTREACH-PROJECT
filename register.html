@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>REGISTERATION</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="logo.png">
+</head>
+<script>
+    function myfunc(){
+    var phone =  document.getElementById("phone").value;
+    if(phone>10){
+        document.getElementById("phone-box").innerHTML="**Phone number must be of 10 digit";
+        return false;
+    }
+     else if(phone<10){
+        document.getElementById("phone-box").innerHTML="**Phone number must be of 10 digit";
+        return false;
+    }
+
+     else if(isNaN(phone)){
+        document.getElementById("phone-box").innerHTML="**Enter valid number";
+        return false;
+    }
+    else{
+        return true;
+
+    }
+
+    var b = document.getElementsByClassName("standard").value;
+    if(b==""){
+        getElementsByClassName("standard-box").innerHTML="**Please fill";
+        return false;
+    }
+    
+    var c = document.getElementsByClassName("city").value;
+    if(c==""){
+        getElementsByClassName("city-box").innerHTML="**Please fill";
+        return false;
+    }
+
+    let d = document.getElementsByClassName("email").value;
+    if(name==""){
+        getElementsByClassName("email-box").innerHTML="**Please fill";
+        return false;
+    }
+}
+</script>
+<body>
+    <h1 id="heading"><img src="title.png" alt="">
+    </h1>
+    <h1>
+        REGISTER
+    </h1>
+    <div class="box">
+        <div class="container">
+            <form onsubmit="return myfunc()">
+                <div><input type="text" placeholder="Name" class="name">
+                    <span class="name-box"></span></div>
+                <div><input type="number" placeholder="Class" class="standard">
+                    <span class="standard-box"></span></div>
+                <div><input type="text" placeholder="City" class="city">
+                    <span class="city-box"></span></div>
+                <div><input type="number" placeholder="Mobile No." id="phone">
+                    <span id="phone-box"></span>
+                </div>
+                <div><input type="email" placeholder="Email" class="email">
+                    <span class="email-box"></span>
+                </div>
+                <div>
+                    Any Query? <br>
+                    <textarea name="mytext" cols="30" rows="10" placeholder="Ask here"></textarea>
+                </div>
+
+                <div><input type="submit" placeholder="Submit"></div>
+                <div><input type="reset" placeholder="Reset"></div>
+        </div>
+        </form>
+    </div>
+    <div id="logo">
+        <img src="logo.png" alt="NO IMAGE">
+        <!-- <img src="title.png" alt="NO IMAGE"> -->
+    </div>
+
+    <footer>
+            <img src="iitr.png" alt="">
+    </footer>
+    </div>
+
+</body>
+
+</html>
